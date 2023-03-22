@@ -1,7 +1,7 @@
 FROM alpine
 RUN apk --no-cache add git g++ make mosquitto-dev
 WORKDIR /root
-RUN git clone --branch v2.0.8 https://github.com/pvtom/rscp2mqtt.git
+RUN git clone --branch v2.0.9 https://github.com/pvtom/rscp2mqtt.git
 WORKDIR /root/rscp2mqtt
 RUN make
 RUN mkdir -p /opt/rscp2mqtt
